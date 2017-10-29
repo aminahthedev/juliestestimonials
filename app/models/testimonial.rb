@@ -1,3 +1,5 @@
 class Testimonial < ActiveRecord::Base
-  # Remember to create a migration!
+  belongs_to :author, foreign_key: :author_id, class_name: :User
+
+  has_many :comments
 end
