@@ -1,12 +1,12 @@
 class CreateTestimonials < ActiveRecord::Migration
   def change
     create_table :testimonials do |t|
-      t.string :title
-      t.string :content
-      t.string :gif
+      t.string :title, null: false
+      t.string :content, null: false
+      t.string :gif, null: false
       t.integer :author_id
 
-      t.timestamps
+      t.timestamps null: true
     end
   end
 end
