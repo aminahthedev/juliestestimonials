@@ -1,0 +1,12 @@
+<section id="registration_form" class="container">
+  <form action="/users" method="post">
+    <input type="text" name="user[first_name]" placeholder="First Name"/>
+    <input type="text" name="user[last_name]" placeholder="Last Name"/>
+    <input type="email" name="user[email]" placeholder="Email"/>
+    <input type="password" name="user[password]" placeholder="Password"/>
+    <input type="submit" class="button" value="Register"/>
+
+  </form>
+</section>
+
+<%= erb :_errors %>
