@@ -1,11 +1,84 @@
 /*------------------SITE STYLING------------------*/
+
 body {
-
+  font-family: 'Helvetica Neue',  sans-serif;
+  font-weight: lighter;
+  background: #F7D7D8;
 }
-.container {
 
+/*h1, h2, h3, h4, h5, h6 {
+  font-family: 'Londrina Outline', cursive;
+}*/
+
+.container {
+  margin: 100px auto;
+  width: 600px;
+  background-color: #FFFFFF;
+  padding: 40px 20px 20px 20px;
+  border: 1px solid black;
 }
 /*------------------NAVIGATION------------------*/
+
+nav {
+  background-color: #341527;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+  height: 100px;
+}
+
+nav a {
+  color: #FFDEAD;
+}
+
+.nav-ul {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.header-a {
+  font-family: 'Londrina Outline', cursive;
+  text-decoration: none;
+  font-size: 4em;
+  padding-top: 20px;
+}
+
+.nav-a {
+  text-decoration: none;
+}
+
+.nav-li {
+  float: right;
+  text-align: right;
+  list-style-type: none;
+  padding-right: 25px;
+  padding-left: 15px;
+  padding-top: 20px;
+  font-size: 1.3em;
+
+}
+
 /*------------------FORMS------------------*/
-/*------------------FORMS------------------*/
+form {
+  text-align: center;
+}
+
+form input {
+  width: 375px;
+  height: 50px;
+  margin: 10px;
+  border-style: hidden;
+  border-bottom: 1px solid #000000;
+}
+
+form input[placeholder] {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #454E4D;
+}
+
+form .button {
+  background-color: #008080;
+  color: #FFFFFF;
+  border-bottom: none;
+  border-radius: 2px;
+}
+
 /*------------------BUTTONS------------------*/
