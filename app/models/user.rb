@@ -24,7 +24,7 @@ class User < ActiveRecord::Base
 
   def validate_password
     if @raw_password == ""
-      errors.add(:password, "is require.")
+      errors.add(:password, "is required.")
     elsif @raw_password.length < 6
       errors.add(:password, "must be at least 6 characters.")
     end

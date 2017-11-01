@@ -1,9 +1,9 @@
-<section id="login_form" class="container">
-  <form action="/sessions" method="post">
+<div>
+  <form id="login-form" class="container" action="/sessions" method="post">
     <input type="email" name="email" placeholder="Email"/>
     <input type="password" name="password" placeholder="Password"/>
     <input type="submit" class="button" value="Login"/>
   </form>
-</section>
+</div>
 
 <%= erb :_errors %>

@@ -1,30 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/application.css">
 
-  <script src="/js/jquery.js"></script>
-  <script src="/js/application.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Londrina+Outline|Open+Sans" rel="stylesheet">
 
-  <title></title>
+  <title>Julie's Kudos</title>
 </head>
+
 <body>
   <nav>
-    <% if logged_in?  %>
-    <ul class="logged">
-      <li><a id="header" href="/">Julie's Kudos</a></li>
-      <li><a id="logout"><%= erb :'/sessions/delete' %></a></li>
+    <% if logged_in? %>
+    <a class="header-a" href="/">Julie's Kudos</a>
+    <ul class="nav-ul">
+      <li class="nav-li"><a id="logout"><%= erb :'/sessions/delete' %></a></li>
     </ul>
     <% else %>
-    <ul class="logged">
-      <li><a id="header" href="/">Julie's Kudos</a></li>
-      <li><a class="nav-li" href="/sessions/new">Login</a></li>
-      <li><a class="nav-li" href="/users/new">Register</a></li>
+    <a class="header-a" href="/">Julie's Kudos</a>
+    <ul class="nav-ul">
+      <li class="nav-li"><a class="nav-a" href="/users/new">Register</a></li>
+      <li class="nav-li"><a class="nav-a" href="/sessions/new">Login</a></li>
     </ul>
     <% end %>
   </nav>
-  <%= yield %>
+
+    <%= yield %>
+
 </body>
 </html>
