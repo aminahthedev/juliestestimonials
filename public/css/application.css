@@ -3,7 +3,17 @@
 body {
   font-family: 'Helvetica Neue',  sans-serif;
   font-weight: lighter;
-  background: #F7D7D8;
+  background: rgba(247,128,64,1);
+  background: -moz-linear-gradient(top, rgba(247,128,64,1) 0%, rgba(230,22,7,1) 49%, rgba(76,11,150,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(247,128,64,1)), color-stop(49%, rgba(230,22,7,1)), color-stop(100%, rgba(76,11,150,1)));
+  background: -webkit-linear-gradient(top, rgba(247,128,64,1) 0%, rgba(230,22,7,1) 49%, rgba(76,11,150,1) 100%);
+  background: -o-linear-gradient(top, rgba(247,128,64,1) 0%, rgba(230,22,7,1) 49%, rgba(76,11,150,1) 100%);
+  background: -ms-linear-gradient(top, rgba(247,128,64,1) 0%, rgba(230,22,7,1) 49%, rgba(76,11,150,1) 100%);
+  background: linear-gradient(to bottom, rgba(247,128,64,1) 0%, rgba(230,22,7,1) 49%, rgba(76,11,150,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f78040', endColorstr='#4c0b96', GradientType=0 );
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 900px;
 }
 
 /*h1, h2, h3, h4, h5, h6 {
@@ -15,7 +25,15 @@ body {
   width: 600px;
   background-color: #FFFFFF;
   padding: 40px 20px 20px 20px;
-  border: 1px solid black;
+  border: 2px solid #F9BD42;
+  border-radius: 2px;
+}
+
+main {
+  /*width: 750px;
+  background-color: blue;
+  height: 900px;;
+  margin: 0 auto;*/
 }
 /*------------------NAVIGATION------------------*/
 
@@ -39,6 +57,7 @@ nav a {
   text-decoration: none;
   font-size: 4em;
   padding-top: 20px;
+  padding-left: 20px;
 }
 
 .nav-a {
@@ -75,10 +94,29 @@ form input[placeholder] {
 }
 
 form .button {
-  background-color: #008080;
+  background-color: #DB7F3D;
   color: #FFFFFF;
   border-bottom: none;
   border-radius: 2px;
 }
 
 /*------------------BUTTONS------------------*/
+
+/*------------------FOOTER------------------*/
+
+footer {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+
+footer p {
+  background-color: #341527;
+  color: #FFDEAD;
+  text-align: center;
+}
+
+footer a {
+  color: #FFDEAD;
+  text-decoration: none;
+}
