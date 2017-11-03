@@ -35,6 +35,13 @@ main {
   height: 900px;;
   margin: 0 auto;*/
 }
+
+.welcome {
+  text-align: center;
+  font-family: 'Helvetica neue', sans-serif;
+  font-weight: 200;
+  color: #FFDEAD
+}
 /*------------------NAVIGATION------------------*/
 
 nav {
@@ -107,13 +114,15 @@ form .button {
 footer {
   bottom: 0;
   width: 100%;
-  position: fixed;
+  position: absolute;
 }
 
 footer p {
   background-color: #341527;
   color: #FFDEAD;
   text-align: center;
+  height: 40px;
+  padding-top: 20px;
 }
 
 footer a {
