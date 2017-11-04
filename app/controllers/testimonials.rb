@@ -1,4 +1,10 @@
 get '/' do
+  @testimonials = Testimonial.all
+
+  if @testimonials.empty
+    erb :'/testimonials/no-testimonials'
+  end
+
   erb :'/testimonials/index'
 end
 
