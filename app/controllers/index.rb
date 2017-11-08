@@ -1,3 +1,3 @@
 get '/' do
-  erb :'/testimonials/show'
+  erb :'/testimonials/index'
 end

@@ -31,6 +31,10 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    carrierwave (1.2.1)
+      activemodel (>= 4.0.0)
+      activesupport (>= 4.0.0)
+      mime-types (>= 1.16)
     database_cleaner (1.4.1)
     diff-lcs (1.2.5)
     factory_girl (4.5.0)
@@ -93,6 +97,7 @@ DEPENDENCIES
   activesupport (~> 4.2.0)
   bcrypt
   capybara
+  carrierwave (~> 1.0)
   database_cleaner
   factory_girl
   faker!
