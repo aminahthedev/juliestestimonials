@@ -43,4 +43,5 @@ bower.json
 # Ignore Byebug command history file.
 .byebug_history
 
-local_env.yml
+#Ignore secrets.yml file
+secrets.yml
