@@ -1,10 +1,6 @@
 get '/testimonials' do
   @testimonials = Testimonial.all
 
-  # if @testimonials.empty
-  #   erb :'/testimonials/no-testimonials'
-  # end
-
   erb :'/testimonials/index'
 end
 
@@ -16,7 +12,7 @@ post '/testimonials' do
   @testimonial = Testimonial.new(params[:testimonial])
 
   if @testimonial.save
-    redirect '/'
+    redirect '/testimonials'
   else
     erb :'/testimonials/new'
   end
@@ -45,5 +41,5 @@ delete '/testimonials/:id' do
 
   @testimonial.destroy
 
-  redirect '/'
+  redirect '/testimonials'
 end

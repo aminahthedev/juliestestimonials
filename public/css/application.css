@@ -47,39 +47,33 @@ main {
 nav {
   background-color: #341527;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
-  height: 100px;
+  height: 80px;
 }
 
 nav a {
   color: #FFDEAD;
+  text-decoration: none;
 }
 
 .nav-ul {
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: baseline;
+}
+
+.nav-li {
+  font-size: 1.3em;
+  list-style-type: none;
+
 }
 
 .header-a {
   font-family: 'Londrina Outline', cursive;
-  text-decoration: none;
   font-size: 4em;
-  padding-top: 20px;
-  padding-left: 20px;
-}
-
-.nav-a {
-  text-decoration: none;
-}
-
-.nav-li {
-  float: right;
-  text-align: right;
-  list-style-type: none;
-  padding-right: 25px;
-  padding-left: 15px;
-  padding-top: 20px;
-  font-size: 1.3em;
-
+  padding-right: 110px;
+  /*padding-top: 20px;
+  padding-left: 20px;*/
 }
 
 /*------------------FORMS------------------*/
@@ -108,6 +102,43 @@ form .button {
 }
 
 /*------------------BUTTONS------------------*/
+.button-to-link {
+  background:none!important;
+  color:inherit;
+  border:none;
+  padding:0!important;
+  font: inherit;
+  /*border is optional*/
+  cursor: pointer;
+  width: 70px;
+}
+
+/*------------------TESTIMONIALS(ALL)------------------*/
+
+.testimonial-li {
+  list-style-type: none;
+  color: #FFDEAD;
+}
+
+.show-all {
+  display: flex;
+  width: 60%;
+}
+
+.testimonial-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.testimonial-content {
+  font-size: 1.3em;
+}
+
+.testimonial-name {
+  font-size: 1.3em;
+  margin-top: 10px;
+}
 
 /*------------------FOOTER------------------*/
 
