@@ -15,7 +15,8 @@
     <% if logged_in? %>
     <a class="header-a" href="/">Julie's Kudos</a>
     <ul class="nav-ul">
-      <li class="nav-li"><a id="logout"><%= erb :'/sessions/delete' %></a></li>
+      <li class="nav-li"><a href="/testimonials/new">Add Testimonial</a></li>
+      <li class="nav-li button-to-link"><a id="logout"><%= erb :'/sessions/delete' %></a></li>
     </ul>
     <% else %>
     <a class="header-a" href="/">Julie's Kudos</a>
@@ -30,7 +31,7 @@
     <%= yield %>
   </main>
   <footer>
-    <p>Julie's Kudos &copy; 2017 Designed &amp; Developed w/&hearts; by <a href="http://aminahthedev.com">Aminah the Dev</a></p>
+    <p>Julie's Kudos &copy; 2017 Designed &amp; Developed w/ &hearts; by <a href="http://aminahthedev.com">Aminah the Dev</a></p>
   </footer>
 </body>
 </html>

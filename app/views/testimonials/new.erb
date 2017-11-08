@@ -1,0 +1,13 @@
+
+  <div id="testimonial-form" class="container">
+    <form id="testimonial_form" action="/testimonials" method="post">
+      <input type="text" name="testimonial[title]" placeholder="Title"/>
+      <br />
+      <textarea type="text" name="testimonial[content]" placeholder="Enter your testimonial here..." row="35" column="100"></textarea>
+      <br />
+
+      <input type="submit" class="button" value="Submit"/>
+    </form>
+  </div>
+
+  <%= erb :_errors %>
