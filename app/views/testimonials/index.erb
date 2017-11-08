@@ -1,7 +1,9 @@
 <section class="show-all">
-  <ul>
+  <ul class="testimonial-ul">
     <% @testimonials.each do |testimonial| %>
-    <%= testimonial %>
+    <li class="testimonial-li testimonial-title"><%= testimonial.title %></li>
+    <li class="testimonial-li testimonial-content"><%= testimonial.content %></li>
     <% end %>
+    <li class="testimonial-li testimonial-name">Kudos by: <%= current_user.first_name %> <%= current_user.last_name %></li>
   </ul>
 </section>
