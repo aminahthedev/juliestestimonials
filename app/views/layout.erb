@@ -14,20 +14,20 @@
   <nav>
     <% if logged_in? %>
     <ul class="nav-ul">
-      <li><a class="header-a" href="/testimonials">Julie's Kudos</a></li>
+      <li><a class="header-a" href="/">Julie's Kudos</a></li>
       <li class="nav-li"><a href="/testimonials/new">Add Testimonial</a></li>
       <li class="nav-li"><a id="logout"><%= erb :'/sessions/delete' %></a></li>
     </ul>
     <% else %>
-    <a class="header-a" href="/">Julie's Kudos</a>
     <ul class="nav-ul">
+      <li><a class="header-a" href="/">Julie's Kudos</a></li>
       <li class="nav-li"><a href="/users/new">Register</a></li>
       <li class="nav-li"><a href="/sessions/new">Login</a></li>
     </ul>
     <% end %>
   </nav>
-  <main>
-    <h1 class="welcome">Julie's Testimonial Site</h1>
+  <main class="container">
+
     <%= yield %>
   </main>
   <footer>

@@ -21,12 +21,16 @@ body {
 }*/
 
 .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #FFDEAD;
   margin: 100px auto;
-  width: 600px;
-  background-color: #FFFFFF;
-  padding: 40px 20px 20px 20px;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 20px 20px 20px;
   border: 2px solid #F9BD42;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 main {
@@ -42,12 +46,17 @@ main {
   font-weight: 200;
   color: #FFDEAD
 }
+
+.julie-kudos {
+  text-align: center;
+}
 /*------------------NAVIGATION------------------*/
 
 nav {
   background-color: #341527;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
   height: 80px;
+  top: 0;
 }
 
 nav a {
@@ -59,7 +68,7 @@ nav a {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  align-items: baseline;
+  align-items: center;
 }
 
 .nav-li {
@@ -79,14 +88,23 @@ nav a {
 /*------------------FORMS------------------*/
 form {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  /*align-items: center;*/
 }
 
-form input {
+form input, textarea {
   width: 375px;
   height: 50px;
   margin: 10px;
   border-style: hidden;
   border-bottom: 1px solid #000000;
+  border-radius: 3px;
+  padding-left: 3px;
+  margin-left: 160px;
 }
 
 form input[placeholder] {
@@ -101,10 +119,14 @@ form .button {
   border-radius: 2px;
 }
 
+label {
+  
+}
+
 /*------------------BUTTONS------------------*/
 .button-to-link {
   background:none!important;
-  color:inherit;
+  color: #FFDEAD !important;
   border:none;
   padding:0!important;
   font: inherit;
@@ -112,6 +134,25 @@ form .button {
   cursor: pointer;
   width: 70px;
 }
+
+/*------------------HOMEPAGE------------------*/
+
+.index-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.welcome-div {
+  border: 3px solid #FFDEAD;
+  padding: 10px;
+  color: #FFDEAD;
+  font-weight: 200;
+}
+
+a, .welcome-div {
+  text-decoration: none;
+}
+
 
 /*------------------TESTIMONIALS(ALL)------------------*/
 
