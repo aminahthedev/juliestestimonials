@@ -11,9 +11,8 @@ body {
   background: -ms-linear-gradient(top, rgba(247,128,64,1) 0%, rgba(230,22,7,1) 49%, rgba(76,11,150,1) 100%);
   background: linear-gradient(to bottom, rgba(247,128,64,1) 0%, rgba(230,22,7,1) 49%, rgba(76,11,150,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f78040', endColorstr='#4c0b96', GradientType=0 );
-  background-repeat: no-repeat;
-  background-size: auto;
-  height: 900px;
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 /*h1, h2, h3, h4, h5, h6 {
@@ -26,7 +25,7 @@ body {
   flex-direction: column;
   color: #FFDEAD;
   margin: 100px auto;
-  width: 70%;
+  width: 60%;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 20px 20px 20px;
   border: 2px solid #F9BD42;
@@ -50,11 +49,28 @@ main {
 .julie-kudos {
   text-align: center;
 }
+
+header {
+  height: 300px;
+  background-image: url('https://i.imgur.com/6ScOK8b.jpg');
+  background-size: 80% contain;
+  background-position: center;
+    &:before {
+      content: '';
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	bottom: 0;
+    	left: 0;
+    	background-image: linear-gradient(to bottom right,#000000,#dc4225);
+    	opacity: .6;
+  }
+}
 /*------------------NAVIGATION------------------*/
 
 nav {
-  background-color: #341527;
-  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+  /*background-color: #341527;*/
+  /*box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);*/
   height: 80px;
   top: 0;
 }
@@ -86,13 +102,20 @@ nav a {
 }
 
 /*------------------FORMS------------------*/
+.form-header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 form {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   display: flex;
   flex-direction: column;
   width: 70%;
   align-items: center;
-  justify-content: center;
+  /*justify-content: center;*/
   /*align-items: center;*/
 }
 
@@ -104,7 +127,7 @@ form input, textarea {
   border-bottom: 1px solid #000000;
   border-radius: 3px;
   padding-left: 3px;
-  margin-left: 160px;
+
 }
 
 form input[placeholder] {
@@ -120,7 +143,7 @@ form .button {
 }
 
 label {
-  
+
 }
 
 /*------------------BUTTONS------------------*/
@@ -184,7 +207,6 @@ a, .welcome-div {
 /*------------------FOOTER------------------*/
 
 footer {
-  bottom: 0;
   width: 100%;
   position: absolute;
 }
