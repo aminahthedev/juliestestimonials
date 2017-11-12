@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_many :comments
-  has_many :testimonials
+  has_many :testimonials, foreign_key: :author_id
 
   validates :first_name, :last_name, :email, { presence: true }
   validates :email, { uniqueness: true }
