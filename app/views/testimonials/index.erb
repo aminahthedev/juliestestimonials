@@ -3,7 +3,7 @@
     <% @testimonials.each do |testimonial| %>
     <li class="testimonial-li testimonial-title"><%= testimonial.title %></li>
     <li class="testimonial-li testimonial-content"><%= testimonial.content %></li>
-    <li class="testimonial-li testimonial-name">Kudos by: <%= testimonial.first_name %> <%= testimonial.last_name %></li>
+    <li class="testimonial-li testimonial-name">Kudos by: <%= testimonial.author.first_name %> <%= testimonial.author.last_name %></li>
     <% end %>
   </ul>
 </section>

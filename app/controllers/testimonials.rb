@@ -9,7 +9,7 @@ get '/testimonials/new' do
 end
 
 post '/testimonials' do
-  @testimonial = Testimonial.new(params[:testimonial])
+  @testimonial = Testimonial.new(title: params[:title], content: params[:content], author_id: current_user.id)
 
   if @testimonial.save
     redirect '/testimonials'
