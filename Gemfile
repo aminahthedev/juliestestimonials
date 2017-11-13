@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.3.3'
 
 gem 'carrierwave', '~> 1.0'
 
@@ -29,3 +30,8 @@ group :test do
   gem 'database_cleaner'
   gem 'factory_girl'
 end
+
+gem 'puma'
+
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
