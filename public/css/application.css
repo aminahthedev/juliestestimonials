@@ -201,6 +201,7 @@ a, .welcome-div {
 
 .testimonial-name {
   font-size: 1.3em;
+  font-weight: bold;
   margin-top: 10px;
   padding-bottom: 40px;
 }
