@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
+ruby '2.3.3'
 
 gem 'carrierwave', '~> 1.0'
-
 # PostgreSQL driver
 gem 'pg'
 
@@ -29,3 +29,6 @@ group :test do
   gem 'database_cleaner'
   gem 'factory_girl'
 end
+
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
